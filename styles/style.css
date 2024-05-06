@@ -1,5 +1,47 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-  /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  background: var(--bg-dark) url('../images/cover-image-dark.png') center center;
+  background-attachment: fixed;
+}
+
+.header {
+  padding-block-start: 10px;
+}
+
+.header__theme-menu {
+
+}
+
+.header__theme-menu-list {
+  
+}
+
+.header__theme-menu-item:not(:last-child) {
+  margin-block-end: 10px;
+}
+
+.header__theme-menu-button {
+  background-color: transparent;
+  color: var(--primary-color);
+  font-size: 18px;
+  line-height: 1;
+  border: none;
+}
+
+.header__theme-menu-button_active {
+  pointer-events: none;
+  border: 1px solid var(--primary-color);
+}
+
+.header__theme-menu-button_type_auto {
+
+}
+
+.header__theme-menu-button_type_light {
+
+}
+
+.header__theme-menu-button_type_dark {
+
 }
