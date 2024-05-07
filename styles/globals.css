@@ -12,6 +12,7 @@ body {
   margin: 0 auto;
   padding-inline: 10px;
   font-family: var(--primary-font);
+  color: var(--text-color);
 }
 
 h1,
