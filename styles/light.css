@@ -12,4 +12,22 @@
   --primary-color: #FF8DCB;
   --second-color: #FFC2E6;
   --text-color: #353430;
+
+  background: var(--dark-color) url('../images/cover-image-light.png') center center;
+  background-attachment: fixed;
+  color: var(--text-color);
+}
+
+.page.theme_light .header__rec {
+  display: none;
+}
+
+.page.theme_light .decorated-zone::before,
+.page.theme_light .decorated-zone::after,
+.page.theme_light .header__theme-menu-button_active {
+  border-color: var(--text-color);
+}
+
+.page.theme_light .header__theme-menu-button {
+  color: var(--text-color);
 }
