@@ -37,6 +37,11 @@ picture {
   padding: 0;
 }
 
+img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
 button,
 a {
   color: currentColor;
