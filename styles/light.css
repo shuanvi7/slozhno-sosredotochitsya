@@ -28,6 +28,7 @@
   border-color: var(--text-color);
 }
 
-.page.theme_light .header__theme-menu-button {
+.page.theme_light .header__theme-menu-button,
+.page.theme_light .header__description {
   color: var(--text-color);
 }

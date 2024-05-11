@@ -1,6 +1,8 @@
 :root {
   --primary-font: "IBM Plex mono", Arial, Helvetica, sans-serif;
 
+  --default-font-size: 18px;
+  
   --primary-color: #FF0070;
   --second-color: #DB00FF;
   --text-color: #F1B2CE;

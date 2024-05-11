@@ -1,9 +1,14 @@
-/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
-
 .page {
-  background: url('../images/cover-image-dark.png') center center;
+  background-image: url('../images/cover-image-dark.png');
+  background-position: center center;
   background-attachment: fixed;
-  font-size: 18px;
+  font-size: var(--default-font-size);
+}
+
+.title {
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  line-height: 82.5%;
+  color: var(--second-color);
 }
 
 .title-decor {
@@ -11,10 +16,24 @@
   font-weight: 700;
 }
 
-.title {
-  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-  line-height: 82.5%;
-  color: var(--second-color);
+.decorated-zone::before,
+.decorated-zone::after {
+  content: '';
+  width: 25px;
+  height: 25px;
+}
+
+.decorated-zone::before {
+  justify-self: end;
+  border-block-start: 1px solid var(--primary-color);
+  border-inline-end: 1px solid var(--primary-color);
+}
+
+.decorated-zone::after {
+  margin-block: 31px 10px;
+  align-self: end;
+  border-block-end: 1px solid var(--primary-color);
+  border-inline-start: 1px solid var(--primary-color);
 }
 
 .link {
@@ -30,6 +49,8 @@
   position: relative;
   display: grid;
   grid-template-columns: 1fr;
+  padding-block-start: 10px;
+  padding-block-end: 37px;
 }
 
 .header__rec {
@@ -56,14 +77,14 @@
 
 .header__theme-menu {
   justify-self: end;
-  margin-block-end: 19.2%;
+  margin-block: 39px 70px;
 }
 
 .header__theme-menu-list {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 5px;
+  gap: 3px;
 }
 
 .header__theme-menu-item:not(:last-child) {
@@ -76,21 +97,13 @@
   color: var(--primary-color);
   line-height: 1;
   border: none;
+  text-transform: lowercase;
 }
 
 .header__theme-menu-button_active {
   padding: 2px 13px;
   pointer-events: none;
   border: 1px solid var(--primary-color);
-}
-
-.header__theme-menu-button_type_auto {
-}
-
-.header__theme-menu-button_type_light {
-}
-
-.header__theme-menu-button_type_dark {
 }
 
 .header__title {
@@ -101,27 +114,6 @@
 .header__description {
   line-height: 1.3;
   color: var(--dark-color);
-}
-
-.decorated-zone::before,
-.decorated-zone::after {
-  content: '';
-  width: 25px;
-  height: 25px;
-}
-
-.decorated-zone::before {
-  justify-self: end;
-  margin-block: 10px 37px;
-  border-top: 1px solid var(--primary-color);
-  border-right: 1px solid var(--primary-color);
-}
-
-.decorated-zone::after {
-  margin-block: 30px 10px;
-  align-self: end;
-  border-left: 1px solid var(--primary-color);
-  border-bottom: 1px solid var(--primary-color);
 }
 
 .content {
@@ -189,4 +181,15 @@
 .footer__title {
   padding-block: 215px;
   text-shadow: 4px 4px 0 var(--primary-color);
+}
+
+@media (width >= 768px) {
+  .header__theme-menu {
+    margin-block: 146px 173px;
+  }
+
+  .header__description  {
+    max-inline-size: 364px;
+    justify-self: end;
+  }
 }
