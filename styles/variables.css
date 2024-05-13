@@ -1,10 +1,12 @@
 :root {
-  --primary-font: "IBM Plex mono", Arial, Helvetica, sans-serif;
+  --primary-font-family: 'IBM Plex mono', Arial, Helvetica, sans-serif;
 
   --default-font-size: 18px;
-  
-  --primary-color: #FF0070;
-  --second-color: #DB00FF;
-  --text-color: #F1B2CE;
-  --dark-color: #000028;
+
+  --primary-color: #353430;
+  --default-background-color: #fff1f7;
+  --primary-accent-color: #ff8dcb;
+  --secondary-accent-color: #ffc2e6;
+
+  --title-shadow-color: #ff0070;
 }
