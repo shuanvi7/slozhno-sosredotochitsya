@@ -1,6 +1,4 @@
-:root {
-  --primary-font-family: 'IBM Plex mono', Arial, Helvetica, sans-serif;
-  --default-font-size: 18px;
+.page.theme_light {
   --content-text-color: #353430;
   --accent-color: #ff8dcb;
   --section-title-color: #353430;

@@ -1,29 +1,14 @@
 .page.theme_dark {
-  --primary-color: #f1b2ce;
-  --default-background-color: #000028;
-  --primary-accent-color: #ff0070;
+  --content-text-color: #f1b2ce;
+  --accent-color: #ff0070;
+  --section-title-color: #ff0070;
+  --section-subtitle-color: #000028;
+  --decor-color: #ff0070;
   --secondary-accent-color: #db00ff;
-  --heading-color: #000028;
-
-  background-image: url('../images/cover-image-dark.png');
-}
-
-.page.theme_dark .header__theme-menu-button,
-.page.theme_dark .content__title {
-  color: var(--primary-accent-color);
-}
-
-.page.theme_dark .header__theme-menu-button_active,
-.page.theme_dark .decorated-zone::before,
-.page.theme_dark .decorated-zone::after {
-  border-color: var(--primary-accent-color);
-}
-
-.page.theme_dark .header__description,
-.page.theme_dark .content__block-title,
-.page.theme_dark .content__block-subtitle,
-.page.theme_dark .gallery__title {
-  color: var(--heading-color);
+  --menu-button-color: #ff0070;
+  --menu-button-hover: rgba(255, 0, 112, 0.4);
+  --main-background-image: url('../images/cover-image-dark.png');
+  --title-shadow-color: #ff0070;
 }
 
 .page.theme_dark .header__decor-dark {
@@ -33,7 +18,7 @@
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  color: var(--primary-accent-color);
+  color: var(--accent-color);
   text-transform: uppercase;
 }
 
@@ -42,8 +27,8 @@
   width: 9px;
   height: 9px;
   border-radius: 50%;
-  box-shadow: 0 0 4px 2px var(--primary-accent-color);
-  background-color: var(--primary-accent-color);
+  box-shadow: 0 0 4px 2px var(--accent-color);
+  background-color: var(--accent-color);
 }
 
 @media (width < 768px) {
@@ -55,10 +40,15 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --primary-color: #f1b2ce;
-    --default-background-color: #000028;
-    --primary-accent-color: #ff0070;
+    --content-text-color: #f1b2ce;
+    --accent-color: #ff0070;
+    --section-title-color: #ff0070;
+    --section-subtitle-color: #000028;
+    --decor-color: #ff0070;
     --secondary-accent-color: #db00ff;
-    --heading-color: #000028;
+    --menu-button-color: #ff0070;
+    --menu-button-hover: rgba(255, 0, 112, 0.4);
+    --main-background-image: url('../images/cover-image-dark.png');
+    --title-shadow-color: #ff0070;
   }
 }
