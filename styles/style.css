@@ -153,6 +153,7 @@
 }
 
 .content__subtitle {
+  margin-block-end: 20px;
   color: var(--section-subtitle-color);
 }
 
